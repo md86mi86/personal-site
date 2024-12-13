@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>درباره من</title>
+    <link rel="stylesheet" href="src/style.css"/>
+  </head>
+  <body class="w-full min-h-screen font-IRANYekanX bg-slate-50 text-black dark:bg-slate-950 dark:text-white transition-all selection:bg-custom-blue-200 selection:text-custom-blue-900 select-none lg:select-auto">
+    <div class="">
+      <header class="sticky top-0 w-full h-16 lg:h-auto flex justify-between items-center bg-slate-100 dark:bg-slate-900 shadow-md transition-all">
+        <!-- menu button -->
+        <div class="pr-4 lg:hidden">
+          <svg id="menuButton" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 stroke-custom-blue-700 cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+          </svg>          
+        </div>
+        <ul id="menu" class="fixed hidden lg:flex lg:relative transition-all top-0 bg-slate-200 dark:bg-slate-800 lg:bg-transparent dark:lg:bg-transparent w-full md:w-1/3 lg:w-auto h-screen lg:h-auto flex-col lg:flex-row gap-2 p-6 translate-x-full lg:translate-x-0 overflow-y-scroll">
+          <!-- close menu button -->
+          <div id="closeButton" class="flex justify-end lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 transition-all stroke-red-600 hover:stroke-red-700 cursor-pointer">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>   
+          </div>       
+          <a href="index.html">
+            <li class="cursor-pointer transition-all bg-slate-300 dark:bg-slate-700 p-4 rounded-lg hover:bg-slate-400 dark:hover:bg-slate-600">صفحه اصلی</li>
+          </a>
+          <a href="sampleWorks.html">
+            <li class="cursor-pointer transition-all bg-slate-300 dark:bg-slate-700 p-4 rounded-lg hover:bg-slate-400 dark:hover:bg-slate-600">نمونه کار ها</li>
+          </a>
+          <a href="aboutMe.html">
+            <li class="cursor-pointer transition-all bg-slate-300 dark:bg-slate-700 p-4 rounded-lg hover:bg-slate-400 dark:hover:bg-slate-600 font-black text-custom-blue-700 dark:text-custom-blue-500">درباره من</li>
+          </a>
+          <a href="contactMe.html">
+            <li class="cursor-pointer transition-all bg-slate-300 dark:bg-slate-700 p-4 rounded-lg hover:bg-slate-400 dark:hover:bg-slate-600">تماس با من</li>
+          </a>
+        </ul>
+        <!-- dark mode button -->
+        <div id="darkModeButton" class="pl-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 block stroke-custom-blue-700 fill-custom-blue-700 cursor-pointer dark:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 hidden stroke-custom-blue-700 fill-custom-blue-700 cursor-pointer dark:block">
+            <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+          </svg>          
+        </div>
+      </header>
+      <main class="w-full min-h-screen flex flex-col justify-center items-center">
+        <p class="text-xl lg:text-3xl px-20 lg:px-52 text-center mt-10">
+          سلام! من محمد ملکی هستم، یک توسعه‌دهنده فرانت‌اند مشتاق
+        </p>
+        <p class="text-lg lg:text-xl px-20 lg:px-52 text-center mt-10">
+          من عاشق تکنولوژی و برنامه‌نویسی هستم و از کار با HTML، CSS، Sass، Bootstrap، Tailwind، JavaScript و Git لذت می‌برم. هدف من موفقیت در این حوزه و ایجاد پروژه‌هایی است که تأثیرگذار و حرفه‌ای باشند
+        </p>
+        <p class="text-lg lg:text-xl px-20 lg:px-52 text-center mt-10">
+          هدف من ارائه طراحی‌های خلاقانه و کاربرپسند است و همیشه به دنبال یادگیری و پیشرفت در این زمینه هستم
+        </p>
+        <p class="text-lg lg:text-xl px-20 lg:px-52 text-center mt-10">
+          اگر به دنبال همکاری در طراحی فرانت‌اند یک وب‌سایت حرفه‌ای هستید، خوشحال می‌شوم با شما در ارتباط باشم
+        </p>
+      </main>
+      <footer class="mt-10 bg-slate-300 transition-all dark:bg-slate-800 p-4">
+        <div class="flex justify-center items-center gap-4 p-4 flex-wrap">
+          <a class="text-center text-custom-blue-700 font-bold" href="mailto:mohammad2007maleki@gmail.com">
+            <img src="img/email.svg" alt="email" class="w-10 lg:w-16 p-2 bg-custom-blue-300 dark:bg-custom-blue-950 transition-all rounded-md shadow-lg">
+          </a>
+          <a href="sms:+989113868751?body=سلام. در مورد طراحی سایت پیام میدم.">
+            <img src="img/phone.svg" alt="phone" class="w-10 lg:w-16 p-2 bg-custom-blue-300 dark:bg-custom-blue-950 transition-all rounded-md shadow-lg">
+          </a>
+        </div>
+        <p class="text-xs lg:text-sm text-slate-400 dark:text-slate-600 text-center transition-all">۲۰۲۴ © <br> طراحی شده توسط محمد ملکی</p>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
